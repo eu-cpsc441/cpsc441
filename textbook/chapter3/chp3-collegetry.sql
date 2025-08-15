@@ -8,11 +8,11 @@ Database: CollegeTry
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp3-collegetry')
-CREATE DATABASE [cpsc441-chp3-collegetry];
+                WHERE name = N'cpsc441_chp3_collegetry')
+CREATE DATABASE [cpsc441_chp3_collegetry];
 GO
 
-USE cpsc441-chp3-collegetry;
+USE cpsc441_chp3_collegetry;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

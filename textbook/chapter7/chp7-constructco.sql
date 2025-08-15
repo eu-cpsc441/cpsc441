@@ -8,11 +8,11 @@ Database: ConstructCo
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp7-constructco')
-CREATE DATABASE [cpsc441-chp7-constructco];
+                WHERE name = N'cpsc441_chp7_constructco')
+CREATE DATABASE [cpsc441_chp7_constructco];
 GO
 
-USE cpsc441-chp7-constructco;
+USE cpsc441_chp7_constructco;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

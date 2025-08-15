@@ -8,11 +8,11 @@ Database: AviaCo
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp8-aviaco')
-CREATE DATABASE [cpsc441-chp8-aviaco];
+                WHERE name = N'cpsc441_chp8_aviaco')
+CREATE DATABASE [cpsc441_chp8_aviaco];
 GO
 
-USE cpsc441-chp8-aviaco;
+USE cpsc441_chp8_aviaco;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

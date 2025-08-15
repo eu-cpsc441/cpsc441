@@ -8,11 +8,11 @@ Database: StoreCo
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp3-storeco')
-CREATE DATABASE [cpsc441-chp3-storeco];
+                WHERE name = N'cpsc441_chp3_storeco')
+CREATE DATABASE [cpsc441_chp3_storeco];
 GO
 
-USE cpsc441-chp3-storeco;
+USE cpsc441_chp3_storeco;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

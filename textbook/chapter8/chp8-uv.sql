@@ -8,11 +8,11 @@ Database: UV
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp8-uv')
-CREATE DATABASE [cpsc441-chp8-uv];
+                WHERE name = N'cpsc441_chp8_uv')
+CREATE DATABASE [cpsc441_chp8_uv];
 GO
 
-USE cpsc441-chp8-uv;
+USE cpsc441_chp8_uv;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

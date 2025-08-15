@@ -8,11 +8,11 @@ Database: TransCo
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp3-transco')
-CREATE DATABASE [cpsc441-chp3-transco];
+                WHERE name = N'cpsc441_chp3_transco')
+CREATE DATABASE [cpsc441_chp3_transco];
 GO
 
-USE cpsc441-chp3-transco;
+USE cpsc441_chp3_transco;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

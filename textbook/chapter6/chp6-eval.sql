@@ -8,11 +8,11 @@ Database: Eval
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp6-eval')
-CREATE DATABASE [cpsc441-chp6-eval];
+                WHERE name = N'cpsc441_chp6_eval')
+CREATE DATABASE [cpsc441_chp6_eval];
 GO
 
-USE cpsc441-chp6-eval;
+USE cpsc441_chp6_eval;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

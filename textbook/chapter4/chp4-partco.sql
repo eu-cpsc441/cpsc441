@@ -8,11 +8,11 @@ Database: PartCo
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp4-partco')
-CREATE DATABASE [cpsc441-chp4-partco];
+                WHERE name = N'cpsc441_chp4_partco')
+CREATE DATABASE [cpsc441_chp4_partco];
 GO
 
-USE cpsc441-chp4-partco;
+USE cpsc441_chp4_partco;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

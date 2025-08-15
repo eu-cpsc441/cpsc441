@@ -8,11 +8,11 @@ Database: CheapCo
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp3-cheapco')
-CREATE DATABASE [cpsc441-chp3-cheapco];
+                WHERE name = N'cpsc441_chp3_cheapco')
+CREATE DATABASE [cpsc441_chp3_cheapco];
 GO
 
-USE cpsc441-chp3-cheapco;
+USE cpsc441_chp3_cheapco;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

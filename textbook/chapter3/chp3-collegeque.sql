@@ -8,11 +8,11 @@ Database: CollegeQue
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp3-collegeque')
-CREATE DATABASE [cpsc441-chp3-collegeque];
+                WHERE name = N'cpsc441_chp3_collegeque')
+CREATE DATABASE [cpsc441_chp3_collegeque];
 GO
 
-USE cpsc441-chp3-collegeque;
+USE cpsc441_chp3_collegeque;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

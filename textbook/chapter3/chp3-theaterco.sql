@@ -8,11 +8,11 @@ Database: TheaterCo
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp3-theaterco')
-CREATE DATABASE [cpsc441-chp3-theaterco];
+                WHERE name = N'cpsc441_chp3_theaterco')
+CREATE DATABASE [cpsc441_chp3_theaterco];
 GO
 
-USE cpsc441-chp3-theaterco;
+USE cpsc441_chp3_theaterco;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

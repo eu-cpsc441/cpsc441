@@ -8,11 +8,11 @@ Database: Clinic
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp4-clinic')
-CREATE DATABASE [cpsc441-chp4-clinic];
+                WHERE name = N'cpsc441_chp4_clinic')
+CREATE DATABASE [cpsc441_chp4_clinic];
 GO
 
-USE cpsc441-chp4-clinic;
+USE cpsc441_chp4_clinic;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

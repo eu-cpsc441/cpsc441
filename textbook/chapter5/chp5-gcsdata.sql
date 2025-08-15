@@ -8,11 +8,11 @@ Database: GCSData
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp5-gcsdata')
-CREATE DATABASE [cpsc441-chp5-gcsdata];
+                WHERE name = N'cpsc441_chp5_gcsdata')
+CREATE DATABASE [cpsc441_chp5_gcsdata];
 GO
 
-USE cpsc441-chp5-gcsdata;
+USE cpsc441_chp5_gcsdata;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

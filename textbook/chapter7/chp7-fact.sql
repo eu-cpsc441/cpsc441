@@ -8,11 +8,11 @@ Database: Fact
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp7-fact')
-CREATE DATABASE [cpsc441-chp7-fact];
+                WHERE name = N'cpsc441_chp7_fact')
+CREATE DATABASE [cpsc441_chp7_fact];
 GO
 
-USE cpsc441-chp7-fact;
+USE cpsc441_chp7_fact;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

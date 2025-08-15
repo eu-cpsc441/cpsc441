@@ -8,11 +8,11 @@ Database: SaleCo
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp3-saleco')
-CREATE DATABASE [cpsc441-chp3-saleco];
+                WHERE name = N'cpsc441_chp3_saleco')
+CREATE DATABASE [cpsc441_chp3_saleco];
 GO
 
-USE cpsc441-chp3-saleco;
+USE cpsc441_chp3_saleco;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

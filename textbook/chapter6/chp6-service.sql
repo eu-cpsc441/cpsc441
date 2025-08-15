@@ -8,11 +8,11 @@ Database: Service
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp6-service')
-CREATE DATABASE [cpsc441-chp6-service];
+                WHERE name = N'cpsc441_chp6_service')
+CREATE DATABASE [cpsc441_chp6_service];
 GO
 
-USE cpsc441-chp6-service;
+USE cpsc441_chp6_service;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

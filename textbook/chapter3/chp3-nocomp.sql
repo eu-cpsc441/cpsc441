@@ -8,11 +8,11 @@ Database: NoComp
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp3-nocomp')
-CREATE DATABASE [cpsc441-chp3-nocomp];
+                WHERE name = N'cpsc441_chp3_nocomp')
+CREATE DATABASE [cpsc441_chp3_nocomp];
 GO
 
-USE cpsc441-chp3-nocomp;
+USE cpsc441_chp3_nocomp;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

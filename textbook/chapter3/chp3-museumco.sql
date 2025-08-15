@@ -8,11 +8,11 @@ Database: MuseumCo
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp3-museumco')
-CREATE DATABASE [cpsc441-chp3-museumco];
+                WHERE name = N'cpsc441_chp3_museumco')
+CREATE DATABASE [cpsc441_chp3_museumco];
 GO
 
-USE cpsc441-chp3-museumco;
+USE cpsc441_chp3_museumco;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

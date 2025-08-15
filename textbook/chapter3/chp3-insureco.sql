@@ -8,11 +8,11 @@ Database: InsureCo
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp3-insureco')
-CREATE DATABASE [cpsc441-chp3-insureco];
+                WHERE name = N'cpsc441_chp3_insureco')
+CREATE DATABASE [cpsc441_chp3_insureco];
 GO
 
-USE cpsc441-chp3-insureco;
+USE cpsc441_chp3_insureco;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

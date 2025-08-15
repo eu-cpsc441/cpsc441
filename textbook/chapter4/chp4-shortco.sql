@@ -8,11 +8,11 @@ Database: ShortCo
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp4-shortco')
-CREATE DATABASE [cpsc441-chp4-shortco];
+                WHERE name = N'cpsc441_chp4_shortco')
+CREATE DATABASE [cpsc441_chp4_shortco];
 GO
 
-USE cpsc441-chp4-shortco;
+USE cpsc441_chp4_shortco;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

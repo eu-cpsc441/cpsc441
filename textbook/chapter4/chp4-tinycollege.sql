@@ -8,11 +8,11 @@ Database: TinyCollege
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp4-tinycollege')
-CREATE DATABASE [cpsc441-chp4-tinycollege];
+                WHERE name = N'cpsc441_chp4_tinycollege')
+CREATE DATABASE [cpsc441_chp4_tinycollege];
 GO
 
-USE cpsc441-chp4-tinycollege;
+USE cpsc441_chp4_tinycollege;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

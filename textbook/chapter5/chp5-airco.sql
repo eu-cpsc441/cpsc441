@@ -8,11 +8,11 @@ Database: AirCo
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp5-airco')
-CREATE DATABASE [cpsc441-chp5-airco];
+                WHERE name = N'cpsc441_chp5_airco')
+CREATE DATABASE [cpsc441_chp5_airco];
 GO
 
-USE cpsc441-chp5-airco;
+USE cpsc441_chp5_airco;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

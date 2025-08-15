@@ -8,11 +8,11 @@ Database: LargeCo
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp7-largeco')
-CREATE DATABASE [cpsc441-chp7-largeco];
+                WHERE name = N'cpsc441_chp7_largeco')
+CREATE DATABASE [cpsc441_chp7_largeco];
 GO
 
-USE cpsc441-chp7-largeco;
+USE cpsc441_chp7_largeco;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

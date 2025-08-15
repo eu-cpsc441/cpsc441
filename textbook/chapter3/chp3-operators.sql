@@ -8,11 +8,11 @@ Database: Operators
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp3-operators')
-CREATE DATABASE [cpsc441-chp3-operators];
+                WHERE name = N'cpsc441_chp3_operators')
+CREATE DATABASE [cpsc441_chp3_operators];
 GO
 
-USE cpsc441-chp3-operators;
+USE cpsc441_chp3_operators;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME

@@ -8,11 +8,11 @@ Database: VendingCo
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp3-vendingco')
-CREATE DATABASE [cpsc441-chp3-vendingco];
+                WHERE name = N'cpsc441_chp3_vendingco')
+CREATE DATABASE [cpsc441_chp3_vendingco];
 GO
 
-USE cpsc441-chp3-vendingco;
+USE cpsc441_chp3_vendingco;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME
