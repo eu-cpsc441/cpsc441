@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/textbook/chapter2/chp2-dealco.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter2/chp2-insureco.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter2/chp2-saleco.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter2/chp2-tinycollege.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter3/chp3-aviaco.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter3/chp3-beneco.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter3/chp3-cheapco.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter3/chp3-collegeque.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter3/chp3-collegetry.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter3/chp3-collegetry2.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter3/chp3-insureco.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter3/chp3-museumco.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter3/chp3-nocomp.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter3/chp3-operators.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter3/chp3-saleco.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter3/chp3-storeco.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter3/chp3-theaterco.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter3/chp3-tinycollege.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter3/chp3-transco.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter3/chp3-vendingco.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter4/chp4-clinic.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter4/chp4-collegetry.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter4/chp4-partco.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter4/chp4-shortco.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter4/chp4-tinycollege.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter5/chp5-airco.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter5/chp5-gcsdata.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter5/chp5-tinycollege.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter6/chp6-constructco.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter6/chp6-eval.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter6/chp6-service.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter7/chp7-constructco.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter7/chp7-fact.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter7/chp7-largeco.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter7/chp7-saleco.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter8/chp8-aviaco.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter8/chp8-constructco.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter8/chp8-saleco.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter8/chp8-saleco2.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/textbook/chapter8/chp8-uv.sql" dialect="TSQL" />
+  </component>
+</project>
