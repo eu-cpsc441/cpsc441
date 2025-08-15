@@ -8,34 +8,79 @@ Database: InsureCo
 IF
     NOT EXISTS (SELECT name
                 FROM sys.databases
-                WHERE name = N'cpsc441-chp2-insureco')
-CREATE DATABASE [cpsc441-chp2-insureco];
+                WHERE name = N'cpsc441_chp2_insureco')
+CREATE DATABASE [cpsc441_chp2_insureco];
 GO
 
-USE cpsc441-chp2-insureco;
+USE cpsc441_chp2_insureco;
 
 IF
     NOT EXISTS (SELECT TABLE_NAME
                 FROM INFORMATION_SCHEMA.TABLES
                 WHERE TABLE_NAME = N'AGENT')
     BEGIN
-        CREATE TABLE AGENT (
+        CREATE TABLE AGENT
+        (
             AGENT_CODE       int,
-            AGENT_NAME      varchar(50),
-            WORKING_AREA    varchar(50),
-            COMMISSION      decimal(10,2),
-            PHONE_NO        varchar(50),
-            COUNTRY        varchar(50)
+            AGENT_LNAME      varchar(15),
+            AGENT_FNAME      varchar(15),
+            AGENT_INITIAL    varchar(1),
+            AGENT_AREACODE   varchar(3),
+            AGENT_PHONE      varchar(8),
+            AGENT_ADDRESS    varchar(30),
+            AGENT_CITY       varchar(15),
+            AGENT_STATE      varchar(2),
+            AGENT_ZIP        varchar(5),
+            AGENT_DATE_HIRED datetime,
+            AGENT_YTD_PAY    numeric,
+            AGENT_YTD_FIT    numeric,
+            AGENT_YTD_FICA   numeric,
+            AGENT_YTD_SLS    numeric,
+            AGENT_DEP        int
         );
-        INSERT INTO AGENT VALUES(7,'Ramasundar','Bangalore',0.15,'077-25814763','');
-        INSERT INTO AGENT VALUES(3,'Alex ','London',0.13,'075-12458969','');
-        INSERT INTO AGENT VALUES(8,'Alford','New York',0.12,'044-25874365','');
-        INSERT INTO AGENT VALUES(13,'Ravi Kumar','Bangalore',0.15,'077-45625874','');
-        INSERT INTO AGENT VALUES(10,'Santakumar','Chennai',0.14,'007-22388644','');
-        INSERT INTO AGENT VALUES(11,'Lucida','San Jose',0.12,'044-52981425','');
-        INSERT INTO AGENT VALUES(12,'Anderson','Brisban',0.13,'045-21447739','');
-        INSERT INTO AGENT VALUES(15,'Subbarao','Bangalore',0.14,'077-12346674','');
-        INSERT INTO AGENT VALUES(4,'Ivan','Torento',0.15,'008-22544166','');
-        INSERT INTO AGENT VALUES(5,'Benjamin','Hampshair',0.11,'008-22536178','');
+        INSERT INTO AGENT
+        VALUES ('501', 'Alby', 'Alex', 'B', '713',
+                '228-1249', '123 Pleasant View Dr.', 'Nashville', 'TN', '37119',
+                '11/1/2000', '26566.24', '6641.56', '2125.3', '132735.75', '3');
+        INSERT INTO AGENT
+        VALUES ('502', 'Hahn', 'Leah', 'F', '615',
+                '882-1244', '334 East Main Street', 'Louisville', 'KY', '25246',
+                '5/23/1986', '32213.76', '8053.44', '2577.1', '138967.35', '0');
+        INSERT INTO AGENT
+        VALUES ('503', ' Okon', 'John', 'T', '615',
+                '123-5589', '452 Technology Circle', 'Oak Ridge', 'TN', '36155',
+                '6/15/2005', '23198.29', '5799.57', '1855.86', '127093.45', '2');
+
+    END
+/* -- */
+
+IF
+    NOT EXISTS (SELECT TABLE_NAME
+                FROM INFORMATION_SCHEMA.TABLES
+                WHERE TABLE_NAME = N'CUSTOMER')
+    BEGIN
+        CREATE TABLE CUSTOMER
+        (
+            CUS_CODE       integer,
+            CUS_LNAME      varchar(15),
+            CUS_FNAME      varchar(15),
+            CUS_INITIAL    varchar(1),
+            CUS_AREACODE   varchar(3),
+            CUS_PHONE      varchar(8),
+            CUS_RENEW_DATE datetime,
+            AGENT_CODE     integer
+        );
+
+        INSERT INTO CUSTOMER VALUES ('10010', 'Ramas', 'Alfred', 'A', '615', '844-2573', '4/5/2022', '502');
+        INSERT INTO CUSTOMER VALUES ('10011', 'Dunne', 'Leona', 'K', '713', '894-1238', '6/16/2022', '501');
+        INSERT INTO CUSTOMER VALUES ('10012', 'Smith', 'Kathy', 'W', '615', '894-2285', '1/29/2023', '502');
+        INSERT INTO CUSTOMER VALUES ('10013', 'Olowski', 'Paul', 'F', '615', '894-2180', '10/14/2022', '502');
+        INSERT INTO CUSTOMER VALUES ('10014', 'Orlando', 'Myron', '', '615', '222-1672', '12/28/2023', '501');
+        INSERT INTO CUSTOMER VALUES ('10015', 'O''Brian', 'Amy', 'B', '713', '442-3381', '9/22/2022', '503');
+        INSERT INTO CUSTOMER VALUES ('10016', 'Brown', 'James', 'G', '615', '297-1228', '3/25/2023', '502');
+        INSERT INTO CUSTOMER VALUES ('10017', 'Williams', 'George', '', '615', '290-2556', '7/17/2022', '503');
+        INSERT INTO CUSTOMER VALUES ('10018', 'Farriss', 'Anne', 'G', '713', '382-7185', '12/3/2022', '501');
+        INSERT INTO CUSTOMER VALUES ('10019', 'Smith', 'Olette', 'K', '615', '297-3809', '3/14/2023', '503');
+
     END
 /* -- */
