@@ -1,0 +1,35 @@
+/* Database Systems, Coronel/Morris */
+/* Type of SQL : Azure SQL Database */
+
+USE cpsc441;
+GO
+
+CREATE SCHEMA c8_uv;
+GO
+
+CREATE TABLE c8_uv.PRODMASTER
+(
+    PROD_ID   varchar(50) PRIMARY KEY,
+    PROD_DESC varchar(50),
+    PROD_QOH  int
+);
+
+INSERT INTO c8_uv.PRODMASTER
+VALUES ('A123', 'SCREWS', '67');
+INSERT INTO c8_uv.PRODMASTER
+VALUES ('BX34', 'NUTS', '37');
+INSERT INTO c8_uv.PRODMASTER
+VALUES ('C583', 'BOLTS', '50');
+
+/* -- */
+
+CREATE TABLE c8_uv.PRODSALES
+(
+    PROD_ID varchar(50) PRIMARY KEY,
+    PS_QTY  int
+);
+
+INSERT INTO c8_uv.PRODSALES
+VALUES ('A123', '7');
+INSERT INTO c8_uv.PRODSALES
+VALUES ('BX34', '3');
