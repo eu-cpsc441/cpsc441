@@ -6,11 +6,23 @@ Open this repository with a GitHub Codespace or locally with a dev container. A 
 
 After creation, all scripts in `scripts/sql-server` will be executed, populating the server with numerous sample databases.
 
+Be patient as the initial setup can take a couple minutes.
+
 ### Connecting to the SQL Server
 
 You can use the SQL Server VS Code extension to connect to the server within the container.
 
-![](./docs/img/sql-server-extension.png)
+![](./docs/img/add-connection.png)
+
+Proceed to set up the connection profile:
+
+- Server name: `localhost`
+- Trust server certificate: checked
+- User name: `sa`
+- Password: `yourStrong(!)Password`
+- Save password: checked
+
+![](./docs/img/connection-profile.png)
 
 If you want to connect to the SQL Server using a separate client (e.g., Datagrip), you'll need to open the Codespace in VS Code (or use a local dev container).
 
