@@ -5,7 +5,8 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "ms-mssql.mssql"
+                "ms-mssql.mssql",
+                "ms-azuretools.vscode-containers"
             ]
         }
     },
