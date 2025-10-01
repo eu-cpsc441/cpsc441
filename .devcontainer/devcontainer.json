@@ -1,0 +1,17 @@
+{
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-mssql.mssql"
+            ]
+        }
+    },
+    "forwardPorts": [
+        1433 // SQL Server port
+    ],
+    // Run all SQL scripts only once after the container is created
+    "postCreateCommand": "/bin/bash .devcontainer/run-sql-scripts.sh"
+}
